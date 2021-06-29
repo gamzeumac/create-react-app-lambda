@@ -3,7 +3,7 @@ import "./App.css"
 import { BrowserRouter as Router,Switch, Route} from "react-router-dom"
 import Header from './containers/Header'
 import ProductListing from "./containers/ProductListing";
-import ProductDetail from "./containers/ProductDetail";
+import ProductDetails from "./containers/ProductDetails";
 
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
          <Header/>
          <Switch>
            <Route path="/" exact component={ProductListing}/>
-         <Route path="/product:productId" exact component={ProductDetail} />
+         <Route path="/product:productId" exact component={ProductDetails} />
          <Route>404 Not Found!</Route>
          </Switch>
          
