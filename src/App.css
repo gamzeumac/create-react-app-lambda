@@ -2,7 +2,6 @@
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
-  
 }
 
 .ui.cards > .card > .image {
@@ -10,7 +9,6 @@
   padding: 20px;
   background: #fff;
   margin: auto;
-  
 }
 .ui.cards > .card > .image > img {
   height: 100%;
@@ -46,17 +44,14 @@
 
 .ui.grid.container {
   margin-top: 45px;
-
 }
 
 .ui.grid > .row {
   background: #fff;
-  
 }
 .ui.grid > .row > .column.lp {
   padding: 20px 40px 20px 20px;
   align-self: flex-start !important;
-  
 }
 .ui.grid > .row > .column.rp {
   padding: 20px 20px 20px 40px;

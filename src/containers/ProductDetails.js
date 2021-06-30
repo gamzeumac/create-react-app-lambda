@@ -2,15 +2,13 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import {selectedProduct,removeSelectedProduct} from "../redux/actions/productsActions";
-
-
+import {
+  selectedProduct,
+  removeSelectedProduct,
+} from "../redux/actions/productsActions";
 const ProductDetails = () => {
-  let product = useSelector((state) => state.product);
   const { productId } = useParams();
-
-  
-
+  let product = useSelector((state) => state.product);
   const { image, title, price, category, description } = product;
   const dispatch = useDispatch();
   const fetchProductDetail = async (id) => {
@@ -38,7 +36,7 @@ const ProductDetails = () => {
             <div className="ui vertical divider">AND</div>
             <div className="middle aligned row">
               <div className="column lp">
-                <img className="ui fluid image" src={image} alt="" />
+                <img className="ui fluid image" src={image} />
               </div>
               <div className="column rp">
                 <h1>{title}</h1>
@@ -61,6 +59,5 @@ const ProductDetails = () => {
     </div>
   );
 };
-
 
 export default ProductDetails;
