@@ -1,13 +1,10 @@
 import React from "react";
+import NavBar from './NavBar';
 
 const Header = () => {
-  return (
-    <div className="ui fixed menu">
-      <div className="ui container center">
-        <h2>MyFakeShop</h2>
-      </div>
-    </div>
-  );
+  return ( <div>   
+    <NavBar/>
+  </div>);
 };
 
 export default Header;

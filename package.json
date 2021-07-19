@@ -7,6 +7,9 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.2.4",
@@ -21,7 +24,8 @@
     "build:app": "react-scripts build",
     "build:lambda": "netlify-lambda build src/lambda",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
